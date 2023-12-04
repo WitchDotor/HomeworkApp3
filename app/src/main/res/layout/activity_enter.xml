@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".presentation.enter.EnterActivity">
+
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_re_welcome_my_dude"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="28sp"
+        android:paddingVertical="16dp"
+        android:layout_marginTop="240dp"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="@id/tvWelcome"
+        app:layout_constraintEnd_toEndOf="@id/tvWelcome"
+        android:text="@string/sign_in"
+        android:paddingVertical="8dp"
+        />
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnSignIn"
+        app:layout_constraintStart_toStartOf="@id/btnSignIn"
+        app:layout_constraintEnd_toEndOf="@id/btnSignIn"
+        android:text="@string/sign_up"
+        android:paddingVertical="8dp"
+        />
+    <Button
+        android:id="@+id/btnSignUpJedi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUp"
+        app:layout_constraintStart_toStartOf="@id/btnSignUp"
+        app:layout_constraintEnd_toEndOf="@id/btnSignUp"
+        android:text="@string/i_m_jedi"
+        android:paddingVertical="8dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
